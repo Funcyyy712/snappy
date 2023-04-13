@@ -196,11 +196,11 @@ int main() {
   return __crc32cw(0, 1);
 }" SNAPPY_HAVE_NEON_CRC32)
 
-check_cxx_source_compiles("
-#include <immintrin.h>
-int main() {
-  return _bzhi_u32(0, 1);
-}" SNAPPY_HAVE_BMI2)
+# check_cxx_source_compiles("
+# #include <immintrin.h>
+# int main() {
+#  return _bzhi_u32(0, 1);
+# }" SNAPPY_HAVE_BMI2)
 
 check_cxx_source_compiles("
 #include <arm_neon.h>
